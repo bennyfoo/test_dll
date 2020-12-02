@@ -12,7 +12,9 @@
 *.so *.h
 
 ## 扩展指令
+
 Visual Studio编译器使用  __declspec
+
 GNU编译器使用 \_\_attribute\_\_
 
 ## __declspec(dllexport)
