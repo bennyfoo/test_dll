@@ -32,5 +32,8 @@ dllimport是为了更好的处理类中的静态成员变量(或者其他...)的
 例子中使用了静态成员变量m_nValue,但是不使用__declspec(dllimport)，项目link的时候会告诉你找不到m_nValue。
 
 ## 生成后事件
+win32
+xcopy $(ProjectDir)\Debug\*.dll $(SolutionDir)\test_main\Debug\  /y
 
- xcopy $(ProjectDir)xxxx\xxxx.dll $(SolutionDir)yyyy\yyyy.dll  /y
+x64
+ xcopy $(ProjectDir)$(Platform)\Debug\*.dll $(SolutionDir)\test_main\$(Platform)\Debug\  /y
